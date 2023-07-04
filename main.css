@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  width: 100px;
+  position: absolute;
+  top: -28px;
+  left: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* input */
+.input {
+  background-color: #212121;
+  max-width: 190px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+/* button */
+button {
+  --hover-shadows: 4px 4px 7px #121212, -4px -4px 7px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 2px 2px 1px #1c1c1c, -3px -3px 3px #262626;
+}
+
+button:hover {
+  box-shadow: var(--hover-shadows);
+}
+
+button:active {
+  box-shadow: var(--hover-shadows), rgb(0, 255, 255) 0px 0px 30px 5px;
+  background-color: rgb(0, 255, 255);
+  transform: scale(0.95);
+}
+
+/* poke container */
+.poke-container {
+  max-width: 1500px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pokebox {
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.pokebox_image-container {
+  background-color: #fff;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.poke-image {
+  background-color: #fff;
+  /* border-radius: 50%; */
+  height: 100px;
+}
+
+.poke-name {
+  font-size: 25px;
+  margin: 0.5rem;
+}
+
+.poke-id {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 1rem auto;
+  font-size: 20px;
+}
+
+.poke-weight {
+  margin-top: 0.2rem;
+}
+
+.poke-type {
+  margin-top: 0.2rem;
+}
